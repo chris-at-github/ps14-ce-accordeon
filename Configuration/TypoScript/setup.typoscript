@@ -1,0 +1,42 @@
+tt_content {
+	ce_accordeon =< lib.contentElement
+	ce_accordeon {
+		templateName = Accordeon.html
+		layoutRootPaths {
+			10 = EXT:ce_accordeon/Resources/Private/Layouts/
+			20 = EXT:xna/Resources/Private/Extensions/CeAccordeon/Layouts/
+		}
+
+		templateRootPaths {
+			10 = EXT:ce_accordeon/Resources/Private/Templates/
+			20 = EXT:xna/Resources/Private/Extensions/CeAccordeon/Templates/
+		}
+
+		partialRootPaths {
+			10 = EXT:ce_accordeon/Resources/Private/Partials/
+			20 = EXT:xna/Resources/Private/Extensions/CeAccordeon/Partials/
+		}
+
+		dataProcessing {
+			30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			30 {
+				as = elements
+				table = tx_xo_domain_model_elements
+				pidInList.field = pid
+				where {
+					data = field:uid
+					intval = 1
+					wrap = tx_xo_content=|
+				}
+				orderBy = sorting
+			}
+
+			120 = Ps14\CeAccordeon\DataProcessing\ModuleProcessor
+			120 {
+				importCss {
+					10 = /assets/css/modules/accordeon.css
+				}
+			}
+		}
+	}
+}
