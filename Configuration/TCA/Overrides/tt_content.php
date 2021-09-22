@@ -4,7 +4,7 @@
 // Icon Text Module von TT-Content
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
 	array(
-		'LLL:EXT:ce_facts/Resources/Private/Language/locallang_tca.xlf:tx_ce_accordeon.title',
+		'LLL:EXT:ce_accordeon/Resources/Private/Language/locallang_tca.xlf:tx_ce_accordeon.title',
 		'ce_accordeon',
 		'ps14-content-accordeon'
 	),
@@ -36,8 +36,8 @@ $GLOBALS['TCA']['tt_content']['types']['ce_accordeon']['columnsOverrides']['tx_x
 		'record_type' => [
 			'config' => [
 				'items' => [
-					['LLL:EXT:ce_facts/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.default', 'ce_accordeon_default'],
-					['LLL:EXT:ce_facts/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.records', 'ce_accordeon_records'],
+					['LLL:EXT:ce_accordeon/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.default', 'ce_accordeon_default'],
+					['LLL:EXT:ce_accordeon/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.record_type.records', 'ce_accordeon_records'],
 				],
 				'default' => 'ce_accordeon_default'
 			]
