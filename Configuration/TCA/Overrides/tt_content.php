@@ -41,6 +41,11 @@ $GLOBALS['TCA']['tt_content']['types']['ce_accordion']['columnsOverrides']['tx_x
 				],
 				'default' => 'ce_accordion_default'
 			]
+		],
+		'description' => [
+			'config' => [
+				'richtextConfiguration' => 'xoDefault'
+			]
 		]
 	],
 	'types' => [
