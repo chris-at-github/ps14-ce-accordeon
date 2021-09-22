@@ -1,5 +1,5 @@
 {
-	"name": "ps14/ce-accordeon",
+	"name": "ps14/ce-accordion",
 	"type": "typo3-cms-extension",
 	"description": "",
 	"authors": [
@@ -13,20 +13,20 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ps14\\CeAccordeon\\": "Classes"
+			"Ps14\\CeAccordion\\": "Classes"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Ps14\\CeAccordeon\\Tests\\": "Tests"
+			"Ps14\\CeAccordion\\Tests\\": "Tests"
 		}
 	},
 	"replace": {
-		"typo3-ter/ce-accordeon": "self.version"
+		"typo3-ter/ce-accordion": "self.version"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ce_accordeon"
+			"extension-key": "ce_accordion"
 		}
 	}
 }

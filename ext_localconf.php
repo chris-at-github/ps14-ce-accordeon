@@ -7,7 +7,7 @@ call_user_func(
 		// -----------------------------------------------------------------------------------------------------------------
 		// PageTs
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-			'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ce_accordeon/Configuration/TSConfig/Page.t3s">'
+			'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ce_accordion/Configuration/TSConfig/Page.t3s">'
 		);
 
 		// -----------------------------------------------------------------------------------------------------------------
@@ -18,9 +18,9 @@ call_user_func(
 		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 
 		$iconRegistry->registerIcon(
-			'ps14-content-accordeon',
+			'ps14-content-accordion',
 			\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-			['source' => 'EXT:ce_accordeon/Resources/Public/Icons/content-accordeon.svg']
+			['source' => 'EXT:ce_accordion/Resources/Public/Icons/content-accordion.svg']
 		);
 	}
 );

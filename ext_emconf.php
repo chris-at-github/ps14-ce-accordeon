@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Ps14 Accordeon',
+	'title' => 'Ps14 Accordion',
 	'description' => '',
 	'category' => 'plugin',
 	'author' => 'Christian Pschorr',
@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
 	],
 	'autoload' => [
 		'psr-4' => [
-			'Ps14\\CeAccordeon\\' => 'Classes',
+			'Ps14\\CeAccordion\\' => 'Classes',
 		],
 	],
 ];
