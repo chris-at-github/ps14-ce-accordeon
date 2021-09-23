@@ -10,7 +10,7 @@
 					<f:variable name="identifier">{data.uid}-{record.data.uid}</f:variable>
 
 					<li>
-						<f:render partial="Accordion/Listing/Header" section="Main" arguments="{identifier: identifier, title: record.data.title, titleType: record.data.title_type, expanded: 'true'}" />
+						<f:render partial="Accordion/Listing/Header" section="Main" arguments="{identifier: identifier, title: record.data.title, titleType: record.data.title_type, expanded: 'false'}" />
 						<f:render partial="Accordion/Listing/Item" section="Main" arguments="{identifier: identifier, record: record}" />
 					</li>
 				</f:for>
