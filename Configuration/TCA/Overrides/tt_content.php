@@ -51,14 +51,14 @@ $GLOBALS['TCA']['tt_content']['types']['ce_accordion']['columnsOverrides']['tx_x
 	'types' => [
 		'ce_accordion_default' => [
 			'showitem' => '
-				l10n_diffsource, record_type, --palette--;;header, description,
+				l10n_diffsource, record_type, --palette--;;header, tx_ce_accordion_active, description,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,
 				--palette--;;visibility,
 				--palette--;;access',
 		],
 		'ce_accordion_records' => [
 			'showitem' => '
-				l10n_diffsource, record_type, --palette--;;header, description,
+				l10n_diffsource, record_type, --palette--;;header, tx_ce_accordion_active, description,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,
 				--palette--;;visibility,
 				--palette--;;access',
