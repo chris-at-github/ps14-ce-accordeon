@@ -22,7 +22,7 @@
 	</f:section>
 
 	<f:section name="Button">
-		<button data-bs-toggle="collapse" data-bs-target="#a--{identifier}-container" aria-expanded="false" aria-controls="a--{identifier}-container">
+		<button data-bs-toggle="collapse" data-bs-target="#a--{identifier}-container" aria-expanded="{f:if(condition: '{expanded}', then: 'true', else: 'false')}" aria-controls="a--{identifier}-container">
 			{title}
 			<xo:svg.inline source="assets/svg/chevron-down.svg" />
 		</button>
