@@ -2,8 +2,19 @@
 	<f:section name="Main">
 		<div id="a--{identifier}-container" class="collapse {f:if(condition: '{record.data.tx_ce_accordion_active}', then: 'show')}" aria-labelledby="a--{identifier}-header">
 			<div class="accordion--container">
-				<f:format.html>{record.data.description}</f:format.html>
+				<f:if condition="{record.data.record_type} == 'ce_accordion_default'">
+					<f:then><f:render section="Default" arguments="{_all}" /></f:then>
+					<f:else><f:render section="Records" arguments="{_all}" /></f:else>
+				</f:if>
 			</div>
 		</div>
+	</f:section>
+
+	<f:section name="Default">
+		<f:format.html>{record.data.description}</f:format.html>
+	</f:section>
+
+	<f:section name="Records">
+		<f:format.raw>{record.content}</f:format.raw>
 	</f:section>
 </div>
