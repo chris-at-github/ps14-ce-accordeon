@@ -48,6 +48,7 @@ tt_content {
 				importCss {
 					10 = /assets/css/components/collapse.css
 					20 = /assets/css/components/accordion.css
+					30 = /assets/css/modules/accordion.css
 				}
 
 				importJs {

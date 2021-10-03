@@ -14,7 +14,7 @@ mix.options({
 	processCssUrls: false
 });
 
-mix.sass('Resources/Public/Sass/accordeon.scss', 'assets/css/modules/accordeon.css')
+mix.sass('Resources/Public/Sass/accordion.scss', 'assets/css/modules/accordion.css')
 	.options({
 		postCss: [
 			require('postcss-cachebuster'),
@@ -26,5 +26,5 @@ mix.sass('Resources/Public/Sass/accordeon.scss', 'assets/css/modules/accordeon.c
 );
 
 if(mix.inProduction() === true) {
-	mix.minify(['../../../assets/css/modules/accordeon.css']);
+	mix.minify(['../../../assets/css/modules/accordion.css']);
 }
