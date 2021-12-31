@@ -61,10 +61,12 @@ $GLOBALS['TCA']['tt_content']['types']['ce_accordion']['columnsOverrides']['tx_x
 		],
 		'ce_accordion_records' => [
 			'showitem' => '
-				l10n_diffsource, record_type, --palette--;;header, tx_ce_accordion_active, content,
+					l10n_diffsource, record_type, --palette--;;header, tx_ce_accordion_active, content,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,
-				--palette--;;visibility,
-				--palette--;;access',
+					--palette--;;visibility,
+					--palette--;;access,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+					--palette--;;print,',
 		],
 	]
 ];
