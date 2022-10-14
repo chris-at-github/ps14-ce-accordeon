@@ -1,20 +1,20 @@
 tt_content {
-	ce_accordion =< lib.contentElement
-	ce_accordion {
+	ps14_accordion =< lib.contentElement
+	ps14_accordion {
 		templateName = Accordion.html
 		layoutRootPaths {
-			10 = EXT:ce_accordion/Resources/Private/Layouts/
-			20 = EXT:xna/Resources/Private/Extensions/CeAccordion/Layouts/
+			10 = EXT:ps14_accordion/Resources/Private/Layouts/
+			20 = EXT:xna/Resources/Private/Extensions/Ps14Accordion/Layouts/
 		}
 
 		templateRootPaths {
-			10 = EXT:ce_accordion/Resources/Private/Templates/
-			20 = EXT:xna/Resources/Private/Extensions/CeAccordion/Templates/
+			10 = EXT:ps14_accordion/Resources/Private/Templates/
+			20 = EXT:xna/Resources/Private/Extensions/Ps14Accordion/Templates/
 		}
 
 		partialRootPaths {
-			10 = EXT:ce_accordion/Resources/Private/Partials/
-			20 = EXT:xna/Resources/Private/Extensions/CeAccordion/Partials/
+			10 = EXT:ps14_accordion/Resources/Private/Partials/
+			20 = EXT:xna/Resources/Private/Extensions/Ps14Accordion/Partials/
 		}
 
 		dataProcessing {

@@ -1,16 +1,16 @@
 mod.wizards.newContentElement.wizardItems {
 	common {
 		elements {
-			ce_accordion {
+			ps14_accordion {
 				iconIdentifier = ps14-content-accordion
-				title = LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_ce_accordion.title
-				description = LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_ce_accordion.description
+				title = LLL:EXT:ps14_accordion/Resources/Private/Language/locallang_tca.xlf:accordion.title
+				description = LLL:EXT:ps14_accordion/Resources/Private/Language/locallang_tca.xlf:accordion.description
 				tt_content_defValues {
-					CType = ce_accordion
+					CType = ps14_accordion
 				}
 			}
 		}
 
-		show := addToList(ce_accordion)
+		show := addToList(ps14_accordion)
 	}
 }

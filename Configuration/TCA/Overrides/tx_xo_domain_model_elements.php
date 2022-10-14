@@ -2,10 +2,10 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // Weitere Felder in TT-Content
 $tmpAccordionElementsColumns = [
-	'tx_ce_accordion_active' => [
+	'tx_ps14_accordion_active' => [
 		'exclude' => true,
 		'l10n_mode' => 'exclude',
-		'label' => 'LLL:EXT:ce_accordion/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.active',
+		'label' => 'LLL:EXT:ps14_accordion/Resources/Private/Language/locallang_tca.xlf:tx_xo_domain_model_elements.active',
 		'config' => [
 			'type' => 'check',
 			'items' => [
