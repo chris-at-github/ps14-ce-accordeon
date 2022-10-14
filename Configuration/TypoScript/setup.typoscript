@@ -43,12 +43,11 @@ tt_content {
 				}
 			}
 
-			120 = Ps14\CeAccordion\DataProcessing\ModuleProcessor
+			120 = Ps14\Ps14Accordion\DataProcessing\ModuleProcessor
 			120 {
 				importCss {
 					10 = /assets/css/components/collapse.css
 					20 = /assets/css/components/accordion.css
-					30 = /assets/css/modules/accordion.css
 				}
 
 				importJs {
