@@ -8,9 +8,12 @@
 			<ul class="accordion">
 				<f:for each="{records}" as="record">
 					<f:variable name="identifier">{data.uid}-{record.data.uid}</f:variable>
+					<f:variable name="cssClass">
+						<f:if condition="{record.data.print_break}">print--break-{record.data.print_break}</f:if> <f:if condition="{record.data.print_visibility}">print--visibility-{record.data.print_visibility}</f:if>
+					</f:variable>
 
-					<li>
-						<f:render partial="Accordion/Listing/Header" section="Main" arguments="{identifier: identifier, title: record.data.title, titleType: record.data.title_type, expanded: 'false'}" />
+					<li class="{cssClass -> xo:format.trim()}">
+						<f:render partial="Accordion/Listing/Header" section="Main" arguments="{identifier: identifier, title: record.data.title, titleType: record.data.title_type, expanded: record.data.tx_ce_accordion_active}" />
 						<f:render partial="Accordion/Listing/Item" section="Main" arguments="{identifier: identifier, record: record}" />
 					</li>
 				</f:for>
